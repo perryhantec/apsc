@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+:root {
+
+}
+
+.templeTitle {
+  border-bottom: #D35A4E 1px solid; padding: 0 0 10px 0; line-height: 30px;
+}
+.templeTitle img {
+  height: 25px; vertical-align: top; margin-right: 5px;
+}
+.templeContent {
+  padding: 10px 40px 30px 40px;
+}
+.templeContent > div {
+
+}
+.templeContent > div a {
+  padding-top: 3px; padding-bottom: 5px; color: #fff; background: #D35A4E; text-align: center; border-radius: 5px;
+  transition: color 0.5s, background 0.5s;
+}
+.templeContent > div a:hover, .templeContent > div a.active {
+  background: #e9aca6;
+}
+
+@media only screen and (max-width:770px) {
+  .templeContent > div > a::before {
+    content: '・';
+  }
+}
